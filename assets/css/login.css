@@ -1,0 +1,117 @@
+*{
+	font-family: 'Dosis', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+:root{
+	--blue-log:#1322D9;
+}
+
+.left-form{
+	background:#fff;
+	width:50%;
+	height:100vh;
+	overflow: hidden;
+	float: left;
+}
+
+.left-form img{
+	width:100%;
+	background-size: cover;
+}
+
+.right-form{
+	width:50%;
+	height:100%;
+	margin:0;
+	float:left;
+	background:#fff;
+	display: flex;
+	justify-content: center;
+}
+
+#form-error{
+	color:#ff0000;
+	font-size:20px;
+	font-weight:400;
+}
+
+.right-form form{
+	height:100%;
+	width:55%;
+	display:flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items: center;
+}
+
+.right-form h2{
+	font-size: 2em;
+	color:var(--blue-log);
+	margin:0;
+	font-weight: bold;
+}
+
+.right-form form > input{
+	border: 2px solid #ccc;
+	width:100%;
+	padding:10px 0;
+	font-size:1.2em;
+	text-align:center;
+}
+
+.right-form form > input:focus{
+	border:2px solid var(--blue-log);
+ 	outline: none;
+}
+
+.right-form label{
+	width:100%;
+	font-size:20px;
+	font-weight:700;
+	margin:20px 0;
+}
+
+.check{
+	width:100%;
+	margin:20px 0;
+}
+
+.right-form input[type="submit"]{
+	cursor: pointer;
+	width:100%;
+	border: 1px solid var(--blue-log);
+	background-color: var(--blue-log);
+	color:#fff;
+	font-size:18px;
+	font-weight:500;
+	padding:8px 30px;
+}
+
+.right-form input[type="submit"]:hover{
+	background-color:#fff;
+	color:var(--blue-log);
+}
+
+
+
+@media only screen and (max-width: 768px){
+	.left-form{
+		display:none;
+	}
+
+	.right-form{
+		width:100%;
+	}
+
+	.right-form form{
+		width:95%;
+		padding:0 1.3em;
+	}
+
+	.right-form form img{
+		width:130px;
+		height:130px;
+	}
+}
